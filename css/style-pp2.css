@@ -1,0 +1,265 @@
+body {
+    margin: 80px;
+    background: #F4F4EF;
+}
+
+.wrapper {
+    margin: 50px 0;
+}
+
+/*header style*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 0 80px;
+    height: 80px;
+    z-index: 9999;
+}
+
+header #home {
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    left: -160px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: black;
+    margin: 0 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+}
+
+header .link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+header .link:hover:after{
+    width: 100%;
+    left: 0;
+    background: black;
+  }
+
+header ul li a:last-child {
+    margin-right: 0;
+}
+/*End of header style*/
+
+/*contact button style*/
+.contact {
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100vh;
+    background-color: white;
+    z-index: 9999;
+}
+
+.contact .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.contact img {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact p a {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    transform: rotate(-90deg);
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+/*End of contact button style*/
+
+/*Social media style*/
+.social {
+    width: 80px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: white;
+}
+
+.social .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.social img {
+    width: 40px;
+    height: 30px;
+}
+
+.social img:first-child {
+    margin-bottom: 25px;
+}
+/*End of social media style*/
+
+/*hero style*/
+.hero {
+    width: 100%;
+}
+
+.hero .content a {
+    margin: 15px;
+    float: left;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.hero .content .visual img {
+    max-width: 100%;
+}
+
+.hero .visual {
+    padding: 65px 245px;
+    background: linear-gradient(to top, #878F80, #878F80 49%, #F4F4EF 49%)
+}
+
+.hero .content .description {
+    width: 571px;
+    margin: 0 auto;
+}
+
+.hero .content .description ul {
+    list-style: none;
+    font-family: 'Barlow',sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.hero .content .description ul li {
+    margin: 55px;
+}
+
+.hero .content .description ul li span {
+    color: #878F80;
+    font-size: 12px;
+    font-weight: 600;
+}
+/*End of hero style*/
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container .images img {
+    max-width: 100%;
+}
+
+.container .description {
+    margin-bottom: 100px;
+}
+
+.container .description h1 {
+    font-size: 50px;
+}
+
+.container .description h1::after {
+    content:'';
+    height:5px;
+    width:100px;
+    background: #000;
+    display: block;
+    margin: 40px 0;
+}
+
+.container .description p {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+}
+
+.container .description span {
+    font-weight: 600;
+}
+
+.slick-dots {
+    top: -45px;
+    left: 0;
+    max-width: 100%!important;
+    display: flex!important;
+}
+
+.slick-dots li {
+    width: inherit!important;
+}
+
+.slick-dots li button:before {
+    font-size: 15px!important;
+    width: 200px!important;
+    font-family: 'Barlow',sans-serif!important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.projet2 .slick-dots li:first-child button:before {
+    content:"Page d'accueil";
+}
+
+.projet2 .slick-dots li:nth-child(2) button:before {
+    content:"Page produit";
+}
+
+.projet2 .slick-dots li:nth-child(3) button:before {
+    content:"Page favoris";
+}
+
+.projet2 .slick-dots li:nth-child(4) button:before {
+    content:"Page panier";
+}
+
+
+.slick-dotted.slick-slider {
+    box-shadow: 4px 4px 6px #00000038;
+}
+
